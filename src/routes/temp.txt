@@ -1,0 +1,51 @@
+
+<code>
+{`\
+fn new() -> Renderer {
+    load Vulkan library and bindings
+
+    determine required extensions
+
+    create a new Vulkan instance
+
+    create a rendering surface
+
+    enumerate and choose a physical device (gpu) and queue families
+
+    create a logical device and related queue
+
+    create a swapchain and array of images
+
+    create a memory allocator, descriptor set allocator, and command buffer
+    allocator
+
+    load shaders
+
+    create render pass, with subpasses for geometry and lighting
+
+    create graphics pipelines:
+        deferred pipeline for geometry
+        ambient pipeline for ambient light
+        point pipeline for point lights
+        directional pipeline for directional lights
+
+    create buffers:
+        matrix buffer containing view and projection data
+        model buffer (eventually) containing model transformation data
+        ambient, point, and directional buffers containing light data, respectively
+        screen vertex buffer providing a target for lighting passes
+
+    set view/projection data layouts and descriptor sets
+
+    set the viewport
+
+    create framebuffers and color buffer
+
+    create an empty command buffer
+
+    create a swapchain future
+
+    set the render stage
+}
+`}
+</code>

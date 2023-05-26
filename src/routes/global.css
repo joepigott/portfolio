@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "JetBrainsMono Regular";
+    src: url("/JetBrainsMonoNerdFont-Regular.ttf");
+}
+
+@font-face {
+    font-family: "JetBrainsMono Bold";
+    src: url("/JetBrainsMonoNerdFont-Bold.ttf");
+}
+
+p {
+    font-family: "JetBrainsMono Regular";
+    align-self: center;
+}
+
+h1, h2, h3 {
+    font-family: "JetBrainsMono Bold";
+}
+
+a {
+    color: #a0b77c;
+    transition: 0.05s;
+}
+
+a:hover, a:visited:hover {
+    color: #a5dd4f;
+}
+
+a:visited {
+    color: #626b55;
+}
+
+h2 a, h2 a:hover, h2 a:visited, h2 a:visited:hover {
+    padding: 0;
+    color: #e5e0c9;
+}
+
+code {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 10px;
+    background-color: #3d3d35;
+}
+
+code.block {
+    margin: 0;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: #3d3d35;
+    white-space: pre-wrap;
+}
+
+p {
+    font-size: 13pt;
+    text-align: justify;
+}
+
+hr {
+    width: 75%;
+    color: #e5e0c9;
+}
+
+strong {
+    color: #80b5b2;
+}
