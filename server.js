@@ -6,10 +6,6 @@ import fs from 'fs';
 // import http from 'http';
 import https from 'https';
 
-import hljs from 'highlight.js';
-import rust from 'highlight.js/lib/languages/rust.js';
-hljs.registerLanguage('rust', rust);
-
 const private_key = fs.readFileSync('hidden', 'utf8');
 const certificate = fs.readFileSync('hidden', 'utf8');
 
