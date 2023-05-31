@@ -21,7 +21,7 @@
     .content {
         display: flex;
         flex-direction: column;
-        justify-self: stretch;
+        align-content: stretch;
         max-width: 60em;
         padding: 2.5em 1em 1em 1em;
         color: #e5e0c9;

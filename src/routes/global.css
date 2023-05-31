@@ -10,7 +10,6 @@
 
 p {
     font-family: "JetBrainsMono Regular";
-    align-self: center;
 }
 
 h1, h2, h3 {
@@ -30,7 +29,8 @@ a:visited {
     color: #626b55;
 }
 
-h2 a, h2 a:hover, h2 a:visited, h2 a:visited:hover {
+h2 a, h2 a:hover, h2 a:visited, h2 a:visited:hover,
+h3 a, h3 a:hover, h3 a:visited, h3 a:visited:hover {
     padding: 0;
     color: #e5e0c9;
 }

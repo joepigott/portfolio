@@ -1,5 +1,8 @@
 <script>
     import screenshot from "$lib/assets/Flintlock/screenshot.png";
+    import Prism from '@magidoc/plugin-svelte-prismjs';
+    import 'prismjs/components/prism-rust';
+    import 'prismjs/themes/prism-okaidia.css';
 </script>
 
 <style>
@@ -65,8 +68,7 @@
     go something like this:
 </p>
 
-<code class="block">
-{`\
+<Prism language={''} source={`\
 fn new() -> Renderer {
     load Vulkan library and bindings
 
@@ -114,9 +116,15 @@ fn new() -> Renderer {
     set the render stage
 }
 `}
-</code>
+/>
 
 <p>
     This skips over a lot of details, but it's generally correct. After this 
     initialization, rendering really isn't too hard.
+</p>
+
+<hr />
+
+<p>
+    This is still under construction. Come back soon!
 </p>
