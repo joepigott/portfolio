@@ -107,6 +107,7 @@
 
         margin-top: 40px;
         position: fixed;
+        z-index: 1000;
         width: 100%;
         display: none;
         flex-direction: column;
@@ -114,7 +115,6 @@
     }
 
     .mobile-dropdown a {
-        z-index: 1000;
         text-decoration: none;
         background-color: #74657a;
         color: #e5e0c9;
