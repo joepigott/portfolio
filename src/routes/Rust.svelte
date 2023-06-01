@@ -8,12 +8,13 @@
 <style>
     .container {
         max-width: 60em;
+        font-size: 13pt;
     }
 
     @media only screen and (max-width: 868px) {
         .container {
             max-width: 40em;
-            min-width: 15em;
+            font-size: 10pt;
         }
     }
 </style>

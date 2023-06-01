@@ -25,11 +25,13 @@
         max-width: 60em;
         padding: 2.5em 1em 1em 1em;
         color: #e5e0c9;
+        font-size: 13pt;
     }
 
     @media only screen and (max-width: 868px) {
         .content {
             max-width: 25em;
+            font-size: 10pt;
         }
     }
 </style>
