@@ -71,8 +71,9 @@
         background-color: #1c1b17;
         font-family: "JetBrainsMono Bold";
 
-        top: 0;
         position: fixed;
+        z-index: 1000;
+        top: 0;
         width: 100%;
         display: none;
         align-items: center;

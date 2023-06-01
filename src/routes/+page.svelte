@@ -37,7 +37,7 @@
 <p>
     I've been using Arch Linux as my main operating system since June of 2022.
     I know it's sort of a joke, but I don't use it to flex how good I am; I 
-    just really dislike bloat, and Arch is relatively easy to installand comes 
+    just really dislike bloat, and Arch is relatively easy to install and comes 
     with nothing I don't want. The computer this website is served from also 
     runs Arch, and it also hosts an obligatory Minecraft server and my own 
     private Git server.

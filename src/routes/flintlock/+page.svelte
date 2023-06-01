@@ -5,14 +5,6 @@
     import 'prismjs/themes/prism-okaidia.css';
 </script>
 
-<style>
-    @media only screen and (min-width: 767px) {
-        p {
-            font-size: 10;
-        }
-    }
-</style>
-
 <h1>flintlock</h1>
 
 <img src={screenshot} alt="development of flintlock" style="border-radius: 0.5em; width: 100%; max-width: 550px; align-self: center;"/>

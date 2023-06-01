@@ -2,6 +2,8 @@
     import Prism from '@magidoc/plugin-svelte-prismjs';
     import 'prismjs/components/prism-rust';
     import 'prismjs/themes/prism-okaidia.css';
+
+    import Rust from '../Rust.svelte';
 </script>
 
 <h1> hexgame </h1>
@@ -44,7 +46,7 @@
     follows:
 </p>
 
-<Prism language={'rust'} source={`\
+<Rust src={`\
 pub fn find(&mut self, node: &usize) -> usize {
     if node >= &self.nodes.len() {
         panic!("Index out of bounds!");
@@ -78,7 +80,7 @@ pub fn find(&mut self, node: &usize) -> usize {
     Let's look at this chunk-by-chunk:
 </p>
 
-<Prism language={'rust'} source={`\
+<Rust src={`\
 if self.nodes[*node] < 0 {
     return *node;
 }
@@ -91,7 +93,7 @@ if self.nodes[*node] < 0 {
     returned.
 </p>
 
-<Prism language={'rust'} source={`let mut current: usize = *node;
+<Rust src={`let mut current: usize = *node;
 let mut data: isize = self.nodes[*node];
 let mut to_compress: Vec<usize> = Vec::new();
 
@@ -114,7 +116,7 @@ while data >= 0 {
     the <code>to_compress</code> list.
 </p>
 
-<Prism language={'rust'} source={`\
+<Rust src={`\
 for comp_node in to_compress {
     self.nodes[comp_node] = current as isize;
 }
@@ -135,7 +137,7 @@ for comp_node in to_compress {
     The algorithm to join two sets is as follows:
 </p>
 
-<Prism language={'rust'} source={`\
+<Rust src={`\
 pub fn union(&mut self, node1: usize, node2: usize) {
     let root: (usize, usize) = (self.find(&node1), self.find(&node2));
 
@@ -158,7 +160,7 @@ pub fn union(&mut self, node1: usize, node2: usize) {
     Again, let's look at this chunk-by-chunk:
 </p>
 
-<Prism language={'rust'} source={`\
+<Rust src={`\
 let root: (usize, usize) = (self.find(&node1), self.find(&node2));
 `}
 />
@@ -168,7 +170,7 @@ let root: (usize, usize) = (self.find(&node1), self.find(&node2));
     are found and stored.
 </p>
 
-<Prism language={'rust'} source={`\
+<Rust src={`\
 if root.0 == root.1 {
     return;
 }
@@ -180,7 +182,7 @@ if root.0 == root.1 {
     already part of the same set, so no joining is necessary.
 </p>
 
-<Prism language={'rust'} source={`\
+<Rust src={`\
 if self.nodes[root.0] < self.nodes[root.1] {
     self.nodes[root.0] += self.nodes[root.1];
     self.nodes[root.1] = root.0 as isize;
@@ -206,7 +208,7 @@ if self.nodes[root.0] < self.nodes[root.1] {
     The <code>HexGame</code> struct is defined as
 </p>
 
-<Prism language={'rust'} source={`\
+<Rust src={`\
 pub struct HexGame {
     logic: DisjointSet,
     game: Vec<Color>,
@@ -233,7 +235,7 @@ pub struct HexGame {
     (nearly identical) is called:
 </p>
 
-<Prism language={'rust'} source={`\
+<Rust src={`\
 pub fn play_red(&mut self, position: usize) -> bool {
     let position = position - 1;
 
@@ -264,7 +266,7 @@ pub fn play_red(&mut self, position: usize) -> bool {
     The function returns true only if the win condition is met. Chunk-by-chunk:
 </p>
 
-<Prism language={'rust'} source={`\
+<Rust src={`\
 let neighbors: Vec<usize> = self.get_neighbors(position, true);
 `}
 />
@@ -276,7 +278,7 @@ let neighbors: Vec<usize> = self.get_neighbors(position, true);
     considered.
 </p>
 
-<Prism language={'rust'} source={`\
+<Rust src={`\
 if self.is_occupied(position) {
     return false;
 }
@@ -292,7 +294,7 @@ self.game[position] = Color::Red;
     turn it is.
 </p>
 
-<Prism language={'rust'} source={`\
+<Rust src={`\
 for neighbor in &neighbors {
     if self.game[*neighbor] == Color::Red || *neighbor >= self.game.len() - 4 {
         self.logic.union(position, *neighbor);
@@ -306,7 +308,7 @@ for neighbor in &neighbors {
     current position.
 </p>
 
-<Prism language={'rust'} source={`\
+<Rust src={`\
 return self.logic.find(&self.top) == self.logic.find(&self.bottom);
 `}
 />
