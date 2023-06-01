@@ -27,10 +27,9 @@
         color: #e5e0c9;
     }
 
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 868px) {
         .content {
             max-width: 25em;
-            font-size: 10pt;
         }
     }
 </style>

@@ -10,7 +10,7 @@
         max-width: 60em;
     }
 
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 868px) {
         .container {
             max-width: 40em;
             min-width: 15em;
