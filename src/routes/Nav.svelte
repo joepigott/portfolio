@@ -114,6 +114,7 @@
     }
 
     .mobile-dropdown a {
+        z-index: 1000;
         text-decoration: none;
         background-color: #74657a;
         color: #e5e0c9;
