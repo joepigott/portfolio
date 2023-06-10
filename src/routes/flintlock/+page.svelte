@@ -7,7 +7,7 @@
 
 <h1>flintlock</h1>
 
-<img src={screenshot} alt="development of flintlock" style="border-radius: 0.5em; width: 100%; max-width: 550px; align-self: center;"/>
+<img src={screenshot} alt="the development of flintlock" style="border-radius: 0.5em; width: 100%; max-width: 550px; align-self: center;"/>
 
 <h2 id="about">
     <a href="#about">about</a>

@@ -1,5 +1,4 @@
 <script>
-    import Prism from '@magidoc/plugin-svelte-prismjs';
     import 'prismjs/components/prism-rust';
     import 'prismjs/themes/prism-okaidia.css';
 

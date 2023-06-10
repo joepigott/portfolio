@@ -1,13 +1,15 @@
 <script>
     let links = [
         { label: "physics", href: "./physics"},
+        { label: "linux", href: "./linux"},
         { label: "flintlock", href: "./flintlock"},
         { label: "hexgame", href: "./hexgame"},
         { label: "pigtex", href: "./pigtex"},
     ];
 
     let socials = [
-        { label: "󰋾", href: "https://instagram.com/joe.pigs_/"},
+        { label: "󰋾", href: "https://instagram.com/joe.pigs_"},
+        { label: "", href: "mailto:pigroy@pigroy.ml"},
         { label: "", href: "https://github.com/joepigott"},
     ];
 
@@ -156,16 +158,15 @@
         <a class="icon" on:click={() => {mobileNav = !mobileNav}}>󰍜</a>
         <div class="social">
             {#each socials as link}
-                    <a href={link.href} class="icon">{link.label}</a>
+                <a href={link.href} class="icon">{link.label}</a>
             {/each}
         </div>
-        <div style="width: 0.5em;"></div>
     </div>
     {#if mobileNav}
         <div class="mobile-dropdown">
             <a href="./">home</a>
             {#each links as link}
-            <a href={link.href}>{link.label}</a>
+                <a href={link.href}>{link.label}</a>
             {/each}
         </div>
     {/if}
