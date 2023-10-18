@@ -69,3 +69,9 @@
     Theory for problems on bounded domains. I gained exceptional progress in
     understanding and solving Fourier series.
 </p>
+
+<p>
+    As of Fall 2023, I am employed by the Utah State University Physics
+    department as a physics lab instructor and a data processing assistant for
+    the NASA AWE mission.
+</p>

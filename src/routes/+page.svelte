@@ -44,6 +44,12 @@
 </p>
 
 <p>
+    I am currently employed as a Data Processing Assistant by USU, working on
+    the NASA AWE mission. Along with this, I instruct an indroductory physics
+    lab for pre-medical students.
+</p>
+
+<p>
     That's a general overview. Follow the links in the navigation bar at the
     top for details on side projects.
 </p>
