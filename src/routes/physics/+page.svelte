@@ -1,4 +1,9 @@
+<script>
+    import ksc from "$lib/assets/Physics/ksc.jpg";
+</script>
+
 <h1> physics and mathematics </h1>
+
 <p>
     Though I do love computer science, the fields I find most interesting are
     physics and mathematics. These are what I'm pursuing in school, and what 
@@ -15,6 +20,18 @@
 <h2 id="physics">
     <a href="#physics">physics</a>
 </h2>
+
+<img src={ksc} style="border-radius: 10px; width: 100%; max-width: 500px; align-self: center;" alt="Public outreach at the Kennedy Space Center"/>
+
+<p>
+    In September 2023, I was hired as a <em>Data Processing Assistant</em> on
+    the NASA AWE mission, working for the USU Physics department. Shortly after
+    being hired, I was invited to do some public outreach at the Kennedy Space
+    Center the week of the launch, and was offered a seat at Banana Creek to
+    watch. This was singlehandedly the best experience of my life, and made me
+    realize I may want to pursue teaching as a career. A photo of me (in the
+    green hat) talking to the public at the KSC can be seen above.
+</p>
 
 <p>
     As of May 2023, I've completed the introductory courses (including their
@@ -45,6 +62,10 @@
     out.
 </p>
 
+<p>
+    <em>Update, Fall 2023:</em> I was right. Electromagnetism is awesome.
+</p>
+
 <h2 id="mathematics">
     <a href="#mathematics">mathematics</a>
 </h2>
@@ -68,10 +89,4 @@
     unbounded domains, and also covered Fourier expansions and Sturm-Lioville
     Theory for problems on bounded domains. I gained exceptional progress in
     understanding and solving Fourier series.
-</p>
-
-<p>
-    As of Fall 2023, I am employed by the Utah State University Physics
-    department as a physics lab instructor and a data processing assistant for
-    the NASA AWE mission.
 </p>

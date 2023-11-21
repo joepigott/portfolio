@@ -8,7 +8,7 @@
     <a href="#about-me" >about me</a>
 </h2>
 
-<img src={prof} style="border-radius: 10px; width: 100%; max-width: 350px; align-self: center;" alt="Me"/>
+<img src={prof} style="border-radius: 10px; width: 100%; max-width: 500px; align-self: center;" alt="Me"/>
 
 <p>
     My name is Joe Pigott, and I'm a student at Utah State University. I'm
@@ -17,6 +17,18 @@
     as a professor and research physics, but I realize this is incredibly hard
     to achieve, so I'm willing to pursue careers in industry, as well as a
     potential career in computer science.
+</p>
+
+<p>
+    I'm currently employed as a <em>Data Processing Assistant</em> for the NASA
+    AWE mission (working with USU, Logan Software, and the Space Dynamics Lab), 
+    as well as an introductory physics lab instructor. At AWE, I mostly write 
+    CLI tools to make my coworkers' workflow more efficient, as well as some 
+    CLI tools of which the product will reach the end user. For these, I 
+    default to Rust, as <code>clap</code> is the best CLI library I've ever 
+    used, and it makes the entire process so much easier. I've used C++ for a 
+    few tasks, but I'm not very good at writing "good" C++, so I'm hesitant to
+    reach for it.
 </p>
 
 <p>
@@ -41,12 +53,6 @@
     with nothing I don't want. The computer this website is served from also 
     runs Arch, and it also hosts an obligatory Minecraft server and my own 
     private Git server.
-</p>
-
-<p>
-    I am currently employed as a Data Processing Assistant by USU, working on
-    the NASA AWE mission. Along with this, I instruct an indroductory physics
-    lab for pre-medical students.
 </p>
 
 <p>
