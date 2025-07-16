@@ -50,12 +50,12 @@ h1 {
 }
 
 h2 {
-    @apply text-4xl;
+    @apply text-5xl mb-3;
     font-family: var(--font-space-grotesk), sans-serif;
 }
 
 h2 {
-    @apply text-3xl;
+    @apply text-4xl;
     font-family: var(--font-space-grotesk), sans-serif;
 }
 
