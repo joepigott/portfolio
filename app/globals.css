@@ -62,7 +62,3 @@ h2 {
 a {
     @apply duration-50 ease-out;
 }
-
-a:hover {
-    @apply text-faded-blue;
-}

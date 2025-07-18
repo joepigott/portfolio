@@ -1,4 +1,4 @@
-const colors = [
+export const colors = [
     "text-celeste",
     "text-tomato",
     "text-periwinkle",

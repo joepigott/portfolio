@@ -1,39 +1,63 @@
 import HighlightText from "./ui/highlight";
 import Image from "next/image";
-import research_photo from '../public/research_photo.jpg';
-import awe_photo from '../public/awe.jpg';
+import profile_photo from '../public/profile.jpg';
+import usu from '../public/usu.jpg'
+import awe_zoomed from '../public/awe_zoomed.jpg';
 import { montserrat } from "./ui/fonts";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Joe Pigott",
+    description: "Joe Pigott's Portfolio - Home Page",
+};
 
 export default function Home() {
     return (
-        <div className={`${montserrat.className} text-lg antialiased flex flex-col gap-12`}>
-            <div className="h-[100svh] md:-mt-30 flex justify-center items-center">
+        <div className={`${montserrat.className} text-xl antialiased flex flex-col gap-40`}>
+            <div className="h-[80svh] md:-mt-25 -mb-30 flex justify-center items-center">
                 <h1 className="text-center">Mission critical <HighlightText>software</HighlightText>, built with the precision of a  <HighlightText>physicist</HighlightText>.</h1>
             </div>
-            <div className="flex flex-col md:flex-row gap-5">
-                <div className="h-[100%] flex-1">
-                    <Image src={awe_photo} alt="AWE Mission outreach at the Kennedy Space Center" className="rounded-xl flex-1" />
+            <div className="flex flex-col items-center md:flex-row gap-5">
+                <div className="flex-1">
+                    <Image src={profile_photo} alt="A picture of me, presenting my physics research" className="rounded-xl flex-1" />
                 </div>
-                <div className="h-[100%] flex-1">
-                    <h2><HighlightText>NASA</HighlightText> AWE Mission Experience</h2>
-
-                    I wrote software for Utah State University on the NASA AWE 
-                    Mission for two years. Working directly under the mission
-                    PI Ludger Scherliess, I developed internal tooling to 
-                    process and store PostGIS representations of satellite 
-                    data and facilitate data transfer between USU and NASA
-                    servers.
+                <div className="flex-2">
+                    <h2>
+                        Hi, I'm <HighlightText>Joe</HighlightText> -- a 
+                        software engineer with a background in
+                        physics, and a passion for building tools that solve
+                        {' '}<HighlightText>real-world problems</HighlightText>.
+                    </h2>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row-reverse gap-5">
-                <div className="h-[100%] flex-1">
-                    <Image src={research_photo} alt="2025 USU Student Research Symposium presentation" className="rounded-xl flex-1" />
+            <div className="flex flex-col items-center md:flex-row-reverse gap-5">
+                <div className="flex-1">
+                    <Image src={usu} alt="USU campus in the fall" className="rounded-xl flex-1" />
                 </div>
-                <div className="h-[100%] flex-1">
-                    <h2>Battle-Tested in <HighlightText>Research</HighlightText></h2>
-
-                    My senior research was on anomalies in the literature data
-                    for electron-phonon coupling in copper.
+                <div className="flex-2">
+                    <h2>
+                        In May 2025, I graduated from Utah State University
+                        with a bachelor's degree in 
+                        {' '}<HighlightText>physics</HighlightText>,
+                        {' '}and minors in 
+                        {' '}<HighlightText>mathematics</HighlightText>
+                        {' '}and
+                        {' '}<HighlightText>computer science</HighlightText>.
+                    </h2>
+                </div>
+            </div>
+            <div className="flex flex-col items-center md:flex-row gap-5">
+                <div className="flex-1">
+                    <Image src={awe_zoomed} alt="AWE Mission outreach at the Kennedy Space Center" className="rounded-xl flex-1" />
+                </div>
+                <div className="flex-2">
+                    <h2>
+                        Through Utah State University, I worked on the 
+                        {' '}<HighlightText>NASA</HighlightText>
+                        {' '}<HighlightText>AWE Mission</HighlightText>
+                        {' '}for two years, writing internal tooling and 
+                        maintaining and administrating servers.
+                    </h2>
                 </div>
             </div>
         </div>

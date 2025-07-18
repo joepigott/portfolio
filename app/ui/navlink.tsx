@@ -1,0 +1,32 @@
+"use client"
+
+import Link from "next/link";
+import { colors } from "./highlight";
+import { useState } from "react";
+import clsx from 'clsx';
+import { usePathname } from "next/navigation";
+
+export default function NavLink({ href, children }: { href: string, children: React.ReactNode }) {
+    const [textColor, setTextColor] = useState("text-foreground");
+
+    function randomColor() {
+        return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    return (
+        <Link href={href}>
+            <span
+              onMouseEnter={ () => setTextColor(randomColor()) }
+              onMouseLeave={ () => setTextColor("text-foreground") }
+              className={clsx(
+                `${textColor}`,
+                {
+                  "underline underline-offset-4": usePathname() === href
+                }
+              )}
+            >
+                {children}
+            </span>
+        </Link>
+    );
+}
