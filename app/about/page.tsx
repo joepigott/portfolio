@@ -4,7 +4,7 @@ import HighlightText from "../ui/highlight";
 import awe_photo from '../../public/awe.jpg';
 import soc_photo from '../../public/soc_photo.jpg';
 import research_photo from '../../public/research_photo.jpg';
-import waterfall from '../../public/waterfall_sorted.jpg';
+import awe_soc_1 from '../../public/awe_soc_1.jpg';
 import { montserrat } from "../ui/fonts";
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <div className={`${montserrat.className} text-xl antialiased flex flex-col gap-40`}>
-            <div className="flex flex-col items-center md:flex-row-reverse gap-5">
+            <div className="flex flex-col items-center md:flex-row-reverse gap-10">
                 <div className="h-[100%] flex-1">
                     <Image 
                         src={soc_photo} 
@@ -39,7 +39,7 @@ export default function About() {
                     responsible for server maintenance and administration.
                 </div>
             </div>
-            <div className="flex flex-col items-center md:flex-row gap-5">
+            <div className="flex flex-col items-center md:flex-row gap-10">
                 <div className="h-[100%] flex-1">
                     <Image 
                         src={research_photo} 
@@ -61,7 +61,7 @@ export default function About() {
                     systematic error in the literature data.
                 </div>
             </div>
-            <div className="flex flex-col items-center md:flex-row-reverse gap-5">
+            <div className="flex flex-col items-center md:flex-row-reverse gap-10">
                 <div className="h-[100%] flex-1">
                     <Image 
                         src={awe_photo} 
@@ -81,16 +81,16 @@ export default function About() {
                     switching into the physics program after taking the course.
                     While on the AWE team, I performed mission outreach many 
                     times, including at the Kennedy Space Center leading up to
-                    the mission launch (right). While presenting my research at
-                    the 2025 USU Spring Research Symposium (above), I recieved
-                    "expert" marks in all categories, with one evaluator noting
-                    me as the best presenter of the year.
+                    the mission launch. While presenting my research at the 
+                    2025 USU Spring Research Symposium, I recieved "expert" 
+                    marks in all categories, with one evaluator noting me as 
+                    the best presenter of the year.
                 </div>
             </div>
-            <div className="flex flex-col items-center md:flex-row gap-5">
+            <div className="flex flex-col items-center md:flex-row gap-10">
                 <div className="h-[100%] flex-1">
                     <Image 
-                        src={waterfall} 
+                        src={awe_soc_1} 
                         title="Bridal Veil Falls, pixel sorted with threshold" 
                         alt="An image of a waterfall, which has been pixel sorted to achieve a glitchy effect" 
                         className="rounded-xl flex-1" 
@@ -102,15 +102,7 @@ export default function About() {
                         {' '}<HighlightText>Great Software</HighlightText>
                     </h2>
 
-                    I taught introductory physics labs for life science majors 
-                    for three years at Utah State, with several of my students 
-                    switching into the physics program after taking the course.
-                    While on the AWE team, I performed mission outreach many 
-                    times, including at the Kennedy Space Center leading up to
-                    the mission launch (right). While presenting my research at
-                    the 2025 USU Spring Research Symposium (above), I recieved
-                    "expert" marks in all categories, with one evaluator noting
-                    me as the best presenter of the year.
+                    
                 </div>
             </div>
         </div>

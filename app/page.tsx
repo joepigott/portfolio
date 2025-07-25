@@ -1,10 +1,23 @@
 import HighlightText from "./ui/highlight";
 import Image from "next/image";
 import profile_photo from '../public/profile.jpg';
-import usu from '../public/usu.jpg'
+import awe_soc_1_cropped from '../public/awe_soc_1_cropped.jpg';
+import usu from '../public/usu.jpg';
 import awe_zoomed from '../public/awe_zoomed.jpg';
 import { montserrat } from "./ui/fonts";
 import type { Metadata } from "next";
+import rust from '../public/rust.svg';
+import linux from '../public/linux.svg';
+import nvim from '../public/nvim.svg';
+import python from '../public/python.svg';
+import cpp from '../public/cpp.svg';
+import c from '../public/c.svg';
+import tex from '../public/tex.svg';
+import java from '../public/java.svg';
+import nextjs from '../public/nextjs.svg';
+import svelte from '../public/svelte.svg';
+import git from '../public/git.svg';
+import server from '../public/servers.svg';
 
 export const metadata: Metadata = {
     title: "Joe Pigott",
@@ -17,7 +30,7 @@ export default function Home() {
             <div className="h-[80svh] md:-mt-25 -mb-30 flex justify-center items-center">
                 <h1 className="text-center">Mission critical <HighlightText>software</HighlightText>, built with the precision of a  <HighlightText>physicist</HighlightText>.</h1>
             </div>
-            <div className="flex flex-col items-center md:flex-row gap-5">
+            <div className="flex flex-col items-center md:flex-row gap-10">
                 <div className="flex-1">
                     <Image src={profile_photo} alt="A picture of me, presenting my physics research" className="rounded-xl flex-1" />
                 </div>
@@ -30,9 +43,9 @@ export default function Home() {
                     </h2>
                 </div>
             </div>
-            <div className="flex flex-col items-center md:flex-row-reverse gap-5">
+            <div className="flex flex-col items-center md:flex-row-reverse gap-10">
                 <div className="flex-1">
-                    <Image src={usu} alt="USU campus in the fall" className="rounded-xl flex-1" />
+                    <Image src={usu} alt="A photo of Utah State University's campus in the fall" className="rounded-xl flex-1" />
                 </div>
                 <div className="flex-2">
                     <h2>
@@ -46,7 +59,7 @@ export default function Home() {
                     </h2>
                 </div>
             </div>
-            <div className="flex flex-col items-center md:flex-row gap-5">
+            <div className="flex flex-col items-center md:flex-row gap-10">
                 <div className="flex-1">
                     <Image src={awe_zoomed} alt="AWE Mission outreach at the Kennedy Space Center" className="rounded-xl flex-1" />
                 </div>
@@ -55,9 +68,44 @@ export default function Home() {
                         Through Utah State University, I worked on the 
                         {' '}<HighlightText>NASA</HighlightText>
                         {' '}<HighlightText>AWE Mission</HighlightText>
-                        {' '}for two years, writing internal tooling and 
+                        {' '}for two years, developing internal tooling and 
                         maintaining and administrating servers.
                     </h2>
+                </div>
+            </div>
+            <div className="flex flex-col items-center md:flex-row-reverse gap-10">
+                <div className="flex-1">
+                    <Image src={awe_soc_1_cropped} alt="A photo of me at my desk in the USU AWE science operation center" className="rounded-xl flex-1" />
+                </div>
+                <div className="flex-2">
+                    <h2>
+                        I'm passionate about
+                        {' '}<HighlightText>good software</HighlightText> that
+                        {' '}<HighlightText>solves problems</HighlightText>.
+                        {' '}I tend to prioritize
+                        {' '}<HighlightText>utility</HighlightText> over
+                        {' '}<HighlightText>aesthetics</HighlightText>.
+                    </h2>
+                </div>
+            </div>
+            <div className="flex flex-col items-center gap-10">
+                <h2 className="flex-1 text-center">
+                    <HighlightText>Languages</HighlightText> and 
+                    {' '}<HighlightText>Technologies</HighlightText>
+                </h2>
+                <div className="flex-2 grid grid-cols-3 md:grid-cols-6">
+                    <Image src={rust} alt="Rust logo" title="Rust" />
+                    <Image src={c} alt="C logo" title="C" />
+                    <Image src={cpp} alt="C++ logo" title="C++" />
+                    <Image src={python} alt="Python logo" title="Python" />
+                    <Image src={tex} alt="TeX logo" title="TeX/LaTeX" />
+                    <Image src={java} alt="Java logo" title="Java" />
+                    <Image src={linux} alt="Linux logo" title="Linux" />
+                    <Image src={nvim} alt="Neovim logo" title="Vim" />
+                    <Image src={nextjs} alt="Next.js logo" title="Next.js" />
+                    <Image src={svelte} alt="Svelte logo" title="Svelte/Sveltekit" />
+                    <Image src={git} alt="Git logo" title="Git" />
+                    <Image src={server} alt="Generic server icon" title="Self-hosting" />
                 </div>
             </div>
         </div>

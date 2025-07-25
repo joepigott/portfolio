@@ -19,7 +19,7 @@ export default function NavLink({ href, children }: { href: string, children: Re
               onMouseEnter={ () => setTextColor(randomColor()) }
               onMouseLeave={ () => setTextColor("text-foreground") }
               className={clsx(
-                `${textColor}`,
+                `${textColor} inline-block duration-50 ease-out hover:scale-105`,
                 {
                   "underline underline-offset-4": usePathname() === href
                 }
