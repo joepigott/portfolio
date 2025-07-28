@@ -115,7 +115,9 @@ export function FancyButton({ value }: { value: string }) {
         <button
             onMouseEnter={ () => setBorderColor(randomColor()) }
             onMouseLeave={ () => setBorderColor("border-midgray") }
-            className={`${montserrat.className} cursor-pointer antialiased rounded-lg px-3 py-2 duration-50 ease-out border-2 ${borderColor} hover:scale-105`}
+            onFocus={ () => setBorderColor(randomColor()) }
+            onBlur={ () => setBorderColor("border-midgray") }
+            className={`${montserrat.className} cursor-pointer antialiased rounded-lg px-3 py-2 duration-50 ease-out border-2 ${borderColor} hover:scale-105 focus:scale-105 outline-none`}
         >
             {value}
         </button>

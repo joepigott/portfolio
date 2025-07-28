@@ -10,7 +10,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
             <body className="min-h-screen flex flex-col">
                 <DesktopNavBar displayType="hidden md:block" />
                 <MobileNavBar displayType="block md:hidden" />
-                <main className="flex-grow p-4 mt-18">{children}</main>
+                <main className="flex-grow mt-18">{children}</main>
                 <Footer />
             </body>
         </html>

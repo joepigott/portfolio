@@ -1,4 +1,5 @@
 import HighlightText from "./ui/highlight";
+import StyledImage from "./ui/styled_image";
 import Image from "next/image";
 import profile_photo from '../public/profile.jpg';
 import awe_soc_1_cropped from '../public/awe_soc_1_cropped.jpg';
@@ -18,6 +19,7 @@ import nextjs from '../public/nextjs.svg';
 import svelte from '../public/svelte.svg';
 import git from '../public/git.svg';
 import server from '../public/servers.svg';
+import FancyLink from "./ui/fancylink";
 
 export const metadata: Metadata = {
     title: "Joe Pigott",
@@ -32,7 +34,11 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center md:flex-row gap-10">
                 <div className="flex-1">
-                    <Image src={profile_photo} alt="A picture of me, presenting my physics research" className="rounded-xl flex-1" />
+                    <StyledImage 
+                        src={profile_photo} 
+                        alt="A picture of me, presenting my physics research" 
+                        className="flex-1"
+                    />
                 </div>
                 <div className="flex-2">
                     <h2>
@@ -45,7 +51,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center md:flex-row-reverse gap-10">
                 <div className="flex-1">
-                    <Image src={usu} alt="A photo of Utah State University's campus in the fall" className="rounded-xl flex-1" />
+                    <StyledImage src={usu} alt="A photo of Utah State University's campus in the fall" className="rounded-xl flex-1" />
                 </div>
                 <div className="flex-2">
                     <h2>
@@ -61,7 +67,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center md:flex-row gap-10">
                 <div className="flex-1">
-                    <Image src={awe_zoomed} alt="AWE Mission outreach at the Kennedy Space Center" className="rounded-xl flex-1" />
+                    <StyledImage src={awe_zoomed} alt="AWE Mission outreach at the Kennedy Space Center" className="rounded-xl flex-1" />
                 </div>
                 <div className="flex-2">
                     <h2>
@@ -75,7 +81,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center md:flex-row-reverse gap-10">
                 <div className="flex-1">
-                    <Image src={awe_soc_1_cropped} alt="A photo of me at my desk in the USU AWE science operation center" className="rounded-xl flex-1" />
+                    <StyledImage src={awe_soc_1_cropped} alt="A photo of me at my desk in the USU AWE science operation center" className="rounded-xl flex-1" />
                 </div>
                 <div className="flex-2">
                     <h2>
@@ -107,6 +113,12 @@ export default function Home() {
                     <Image src={git} alt="Git logo" title="Git" />
                     <Image src={server} alt="Generic server icon" title="Self-hosting" />
                 </div>
+            </div>
+            <div className="-mt-20 mb-10">
+                <h2 className="text-center">
+                    Take a look at some of my{' '}
+                    <FancyLink href="/projects">projects</FancyLink>!
+                </h2>
             </div>
         </div>
     );
