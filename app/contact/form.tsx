@@ -1,9 +1,9 @@
 "use client"
 
 import { useId } from "react";
-import { montserrat } from "../ui/fonts";
+import { montserrat } from "@/app/ui/fonts";
 import { useState } from "react"
-import { ContactFormData } from "../api/contact/route";
+import { ContactFormData } from "@/app/api/contact/route";
 
 const colors = [
     "border-tomato",

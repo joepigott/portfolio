@@ -1,10 +1,10 @@
-import FancyLink from "../ui/fancylink";
-import { montserrat } from "../ui/fonts";
-import HighlightText from "../ui/highlight";
-import StyledImage from "../ui/styled_image";
-import waterfall from '../../public/waterfall_sorted.jpg';
-import ts_ascii from '../../public/ts_ascii.png';
-import server_graph from '../../public/server_graph.png';
+import FancyLink from "@/app/ui/fancylink";
+import { montserrat } from "@/app/ui/fonts";
+import HighlightText from "@/app/ui/highlight";
+import StyledImage from "@/app/ui/styled_image";
+import waterfall from '@/public/pixels/waterfall_sorted.jpg';
+import ts_ascii from '@/public/taskscheduler/ts_ascii.png';
+import server_graph from '@/public/server/server_graph.png';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -48,7 +48,7 @@ export default function Projects() {
             </div>
             <div className="flex flex-col items-center md:flex-row gap-10">
                 <div className="flex-1">
-                    <StyledImage src={server_graph} alt="A display of several server monitoring graphs" title="Grafana Server Dashboard" className="rounded-xl" />
+                    <StyledImage src={server_graph} alt="A display of several server monitoring graphs" title="Grafana server dashboard" className="rounded-xl" />
                 </div>
                 <div className="flex-1">
                     <h2>

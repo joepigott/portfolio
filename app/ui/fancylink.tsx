@@ -1,6 +1,6 @@
 "use client"
 
-import { colors } from "./highlight";
+import { colors } from "@/app/ui/highlight";
 import { useState } from "react";
 
 export default function FancyLink({ href, children }: { href: string, children: React.ReactNode }) {
@@ -17,7 +17,7 @@ export default function FancyLink({ href, children }: { href: string, children: 
           onMouseLeave={ () => setTextColor("text-foreground") }
           onFocus={ () => setTextColor(randomColor()) }
           onBlur={ () => setTextColor("text-foreground") }
-          className={`inline ${textColor} duration-50 ease-out underline underline-offset-2 hover:scale-105 focus:scale-105 hover:font-bold inline-block outline-none`}
+          className={`inline ${textColor} duration-50 ease-out underline underline-offset-2 hover:scale-105 focus:scale-105 inline-block outline-none`}
         >
             {children}
         </a>

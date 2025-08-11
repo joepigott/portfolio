@@ -1,4 +1,4 @@
-import { montserrat } from "./fonts";
+import { montserrat } from "@/app/ui/fonts";
 
 export default function Footer() {
     return (

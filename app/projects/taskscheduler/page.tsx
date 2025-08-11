@@ -1,10 +1,10 @@
-import { montserrat } from '../../ui/fonts';
-import StyledImage from "../../ui/styled_image";
-import ts_ascii_wide from '../../../public/ts_ascii_wide.png';
-import ts_usage from '../../../public/ts_usage.png';
-import ts_api from '../../../public/ts_api.png';
-import ts_priority from '../../../public/ts_priority.png';
-import ts_server from '../../../public/ts_server.png';
+import { montserrat } from '@/app/ui/fonts';
+import StyledImage from "@/app/ui/styled_image";
+import ts_ascii_wide from '@/public/taskscheduler/ts_ascii_wide.png';
+import ts_usage from '@/public/taskscheduler/ts_usage.png';
+import ts_api from '@/public/taskscheduler/ts_api.png';
+import ts_priority from '@/public/taskscheduler/ts_priority.png';
+import ts_server from '@/public/taskscheduler/ts_server.png';
 import HighlightText from "@/app/ui/highlight";
 import { Metadata } from "next";
 import FancyLink from '@/app/ui/fancylink';
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 
 export default function TaskScheduler() {
     return (
-        <div className={`${montserrat.className} antialiased flex flex-col gap-20 md:-mt-15 items-center text-xl`}>
-            <div className="flex flex-col gap-5 items-center">
+        <div className={`${montserrat.className} antialiased flex flex-col gap-40 md:-mt-12 items-center text-xl`}>
+            <div className="flex flex-col gap-10 items-center">
                 <StyledImage src={ts_ascii_wide} alt='The words "Task Scheduler" in ASCII art' title="Task Scheduler" className="rounded-2xl" />
                 <h1>
                     A <HighlightText>smart todo list</HighlightText> that{' '}
@@ -26,7 +26,7 @@ export default function TaskScheduler() {
             </div>
             <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
                 <div className="flex-1">
-                    <StyledImage src={ts_priority} alt='A code snippet detailing a first-in-first-out priority implementation' title="FIFO priority implementation" className="rounded-xl" />
+                    <StyledImage src={ts_priority} alt='A code snippet detailing a first-in-first-out priority implementation' title="FIFO priority implementation" />
                 </div>
                 <div className="flex-1">
                     <h2>
@@ -56,7 +56,7 @@ export default function TaskScheduler() {
             </div>
             <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
                 <div className="flex-1">
-                    <StyledImage src={ts_usage} alt="Usage information for the Task Scheduler cli client" title="Task Scheduler client usage" className="rounded-xl" />
+                    <StyledImage src={ts_usage} alt="Usage information for the Task Scheduler cli client" title="Task Scheduler client usage" />
                 </div>
                 <div className="flex-1">
                     <h2>
@@ -71,7 +71,7 @@ export default function TaskScheduler() {
             </div>
             <div className="flex flex-col md:flex-row-reverse gap-10 items-center justify-center">
                 <div className="flex-1">
-                    <StyledImage src={ts_api} alt="Output of 'curl' command accessing the 'tasksd' server" title="'curl' accessing API endpoints" className="rounded-xl" />
+                    <StyledImage src={ts_api} alt="Output of 'curl' command accessing the 'tasksd' server" title="'curl' accessing API endpoints" />
                 </div>
                 <div className="flex-1">
                     <h2>
@@ -82,7 +82,7 @@ export default function TaskScheduler() {
                     makes developing new clients or widgets quick and easy.
                 </div>
             </div>
-            <div>
+            <div className='flex flex-col gap-10 items-center justify-center'>
                 <h2>
                     Check out the project on{' '}
                     <FancyLink 
@@ -90,6 +90,10 @@ export default function TaskScheduler() {
                     >
                         Github
                     </FancyLink>.
+                </h2>
+                <h2>
+                    An <HighlightText>Android client</HighlightText> is in 
+                    active development. Stay tuned!
                 </h2>
             </div>
         </div>

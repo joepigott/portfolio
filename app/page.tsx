@@ -1,24 +1,24 @@
-import HighlightText from "./ui/highlight";
-import StyledImage from "./ui/styled_image";
+import HighlightText from "@/app/ui/highlight";
+import StyledImage from "@/app/ui/styled_image";
 import Image from "next/image";
-import profile_photo from '../public/profile.jpg';
-import awe_soc_1_cropped from '../public/awe_soc_1_cropped.jpg';
-import usu from '../public/usu.jpg';
-import awe_zoomed from '../public/awe_zoomed.jpg';
-import { montserrat } from "./ui/fonts";
+import profile_photo from '@/public/misc/profile.jpg';
+import awe_soc_1_cropped from '@/public/awe/awe_soc_1_cropped.jpg';
+import usu from '@/public/misc/usu.jpg';
+import awe_zoomed from '@/public/awe/awe_zoomed.jpg';
+import { montserrat } from "@/app/ui/fonts";
 import type { Metadata } from "next";
-import rust from '../public/rust.svg';
-import linux from '../public/linux.svg';
-import nvim from '../public/nvim.svg';
-import python from '../public/python.svg';
-import cpp from '../public/cpp.svg';
-import c from '../public/c.svg';
-import tex from '../public/tex.svg';
-import java from '../public/java.svg';
-import nextjs from '../public/nextjs.svg';
-import svelte from '../public/svelte.svg';
-import git from '../public/git.svg';
-import server from '../public/servers.svg';
+import rust from '@/public/languages/rust.svg';
+import linux from '@/public/languages/linux.svg';
+import nvim from '@/public/languages/nvim.svg';
+import python from '@/public/languages/python.svg';
+import cpp from '@/public/languages/cpp.svg';
+import c from '@/public/languages/c.svg';
+import tex from '@/public/languages/tex.svg';
+import java from '@/public/languages/java.svg';
+import nextjs from '@/public/languages/nextjs.svg';
+import svelte from '@/public/languages/svelte.svg';
+import git from '@/public/languages/git.svg';
+import server from '@/public/languages/servers.svg';
 import FancyLink from "./ui/fancylink";
 
 export const metadata: Metadata = {
@@ -57,7 +57,7 @@ export default function Home() {
                     <h2>
                         In May 2025, I graduated from Utah State University
                         with a bachelor's degree in 
-                        {' '}<HighlightText>physics</HighlightText>,
+                        {' '}<HighlightText>physics</HighlightText>
                         {' '}and minors in 
                         {' '}<HighlightText>mathematics</HighlightText>
                         {' '}and

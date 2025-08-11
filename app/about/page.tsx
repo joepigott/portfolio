@@ -1,14 +1,14 @@
 import { Metadata } from "next";
-import StyledImage from "../ui/styled_image";
-import HighlightText from "../ui/highlight";
-import awe_photo from '../../public/awe.jpg';
-import soc_photo from '../../public/soc_photo.jpg';
-import research_photo from '../../public/research_photo.jpg';
-import awe_soc_1 from '../../public/awe_soc_1.jpg';
-import whiteboard from '../../public/whiteboard.jpg';
-import baby_photo from '../../public/baby_photo.jpg';
-import { montserrat } from "../ui/fonts";
-import FancyLink from "../ui/fancylink";
+import StyledImage from "@/app/ui/styled_image";
+import HighlightText from "@/app/ui/highlight";
+import awe_photo from '@/public/awe/awe.jpg';
+import soc_photo from '@/public/awe/soc_photo.jpg';
+import research_photo from '@/public/misc/research_photo.jpg';
+import awe_soc_1 from '@/public/awe/awe_soc_1.jpg';
+import whiteboard from '@/public/misc/whiteboard.jpg';
+import baby_photo from '@/public/misc/baby_photo.jpg';
+import { montserrat } from "@/app/ui/fonts";
+import FancyLink from "@/app/ui/fancylink";
 
 export const metadata: Metadata = {
     title: "About",
@@ -136,10 +136,10 @@ export default function About() {
                         developing software, especially tools that are useful.
                         Whether it be processing NASA data, writing a{' '}
                         <FancyLink href="/projects/taskscheduler">smart
-                        todo list</FancyLink>, or even devloping a tool to 
-                        count the number of homework pages I wrote in college,
-                        I love applying my skills to solve problems that matter
-                        to people.
+                        todo list</FancyLink>, or even developing a tool to 
+                        count the number of homework pages I wrote in college
+                        (over 2000), I love applying my skills to solve 
+                        problems that matter to people.
                     </p>
 
                     <p>

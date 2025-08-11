@@ -1,5 +1,5 @@
-import { space_grotesk } from "./fonts";
-import NavLink from "./navlink";
+import { space_grotesk } from "@/app/ui/fonts";
+import NavLink from "@/app/ui/navlink";
 
 export function DesktopNavBar({ displayType }: { displayType: string }) {
     return (

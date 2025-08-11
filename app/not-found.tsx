@@ -1,5 +1,5 @@
-import FancyLink from "./ui/fancylink";
-import { montserrat } from "./ui/fonts";
+import FancyLink from "@/app/ui/fancylink";
+import { montserrat } from "@/app/ui/fonts";
 
 export default function NotFound() {
     return (

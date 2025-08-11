@@ -1,8 +1,8 @@
-import "./globals.css";
-import { DesktopNavBar } from "./ui/desktop_nav";
-import { MobileNavBar } from "./ui/mobile_nav";
-import { montserrat, space_grotesk } from "./ui/fonts";
-import Footer from "./ui/footer";
+import "@/app/globals.css";
+import { DesktopNavBar } from "@/app/ui/desktop_nav";
+import { MobileNavBar } from "@/app/ui/mobile_nav";
+import { montserrat, space_grotesk } from "@/app/ui/fonts";
+import Footer from "@/app/ui/footer";
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
     return (

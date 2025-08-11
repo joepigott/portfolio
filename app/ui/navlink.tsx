@@ -13,17 +13,24 @@ export default function NavLink({ href, children }: { href: string, children: Re
         return colors[Math.floor(Math.random() * colors.length)];
     }
 
+    function isActive() {
+        const currentPath = usePathname();
+        if (href === '/') {
+            return currentPath === href;
+        } else {
+            return currentPath.startsWith(href);
+        }
+    }
+
     return (
         <Link href={href}>
             <span
               onMouseEnter={ () => setTextColor(randomColor()) }
               onMouseLeave={ () => setTextColor("text-foreground") }
-              onFocus={ () => setTextColor(randomColor()) }
-              onBlur={ () => setTextColor("text-foreground") }
               className={clsx(
-                `${textColor} inline-block duration-50 ease-out hover:scale-105 focus:scale-105 outline-none`,
+                `${textColor} inline-block duration-50 ease-out hover:scale-105 focus:scale-105`,
                 {
-                  "underline underline-offset-4": usePathname() === href
+                  "underline underline-offset-4": isActive()
                 }
               )}
             >

@@ -1,8 +1,8 @@
 'use client'
 
 import { useState, useEffect } from "react";
-import { space_grotesk } from "./fonts";
-import NavLink from "./navlink";
+import { space_grotesk } from "@/app/ui/fonts";
+import NavLink from "@/app/ui/navlink";
 import { Menu, XIcon } from 'lucide-react';
 
 export function MobileNavBar({ displayType }: { displayType: string }) {

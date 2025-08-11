@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import ContactForm from "./form";
+import ContactForm from "@/app/contact/form";
 
 export const metadata: Metadata = {
     title: "Contact",
