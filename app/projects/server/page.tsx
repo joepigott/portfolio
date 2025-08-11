@@ -96,7 +96,7 @@ export default function Server() {
     );
 }
 
-export function IconLink({ href, src, alt, title, className }: { href: string, src: StaticImageData, alt: string, title?: string, className?: string }) {
+function IconLink({ href, src, alt, title, className }: { href: string, src: StaticImageData, alt: string, title?: string, className?: string }) {
     return (
         <a href={href}>
             <Image 
@@ -108,7 +108,7 @@ export function IconLink({ href, src, alt, title, className }: { href: string, s
     );
 }
 
-export function DynamicGridBox({ children, className }: { children: ReactNode, className?: string }) {
+function DynamicGridBox({ children, className }: { children: ReactNode, className?: string }) {
     const colors = [
         "bg-celeste",
         "bg-tomato",
