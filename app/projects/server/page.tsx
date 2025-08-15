@@ -15,8 +15,7 @@ import mealie from "@/public/server/services/mealie.png";
 import paperless from "@/public/server/services/paperless.png";
 import firefly from "@/public/server/services/firefly.png";
 import vaultwarden from "@/public/server/services/vaultwarden.png";
-import { ReactNode } from "react";
-import clsx from "clsx";
+import DynamicGridBox from "@/app/ui/dynamicGridBox";
 
 export default function Server() {
     return (
@@ -106,27 +105,4 @@ function IconLink({ href, src, alt, title, className }: { href: string, src: Sta
                 className={`duration-50 ease-out hover:scale-105 focus:scale-105 outline-none ${className}`} />
         </a>
     );
-}
-
-function DynamicGridBox({ children, className }: { children: ReactNode, className?: string }) {
-    const colors = [
-        "bg-celeste",
-        "bg-tomato",
-        "bg-periwinkle",
-        "bg-faded-blue",
-        "bg-slate-blue"
-    ];
-
-    const bgColor = colors[Math.floor(Math.random() * colors.length)];
-
-    return (
-        <div className={clsx(
-            `${bgColor} ${className}`,
-            {
-                "text-background": bgColor === "bg-celeste"
-            }
-        )}>
-            {children}
-        </div>
-    )
 }
